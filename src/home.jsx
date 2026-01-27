@@ -95,9 +95,9 @@ const Home = () => {
           {message && <p className="formMessage">{message}</p>}
 
           <p className="smallTexts">
-            By signing up you agree to Optinwise's <b>Terms of Service</b> and{" "}
+            By signing up you agree to ContactBin's <b>Terms of Service</b> and{" "}
             <b>Privacy Policy</b>, and agree to receive marketing communications
-            from Optinwise at the email address provided. This page is protected
+            from ContactBin at the email address provided. This page is protected
             by reCAPTCHA and is subject to Google's <b>Terms of Service</b> and{" "}
             <b>Privacy Policy</b>.
           </p>
@@ -113,7 +113,7 @@ const Home = () => {
             </p>
             <p className="fboad">
               Whether you want to use a prebuilt landing page or link a post API
-              to your own created form on your website, Optinwise does the job.
+              to your own created form on your website, ContactBin does the job.
             </p>
           </div>
           <div className="sectionTwoSubTwo">
@@ -130,7 +130,7 @@ const Home = () => {
               <ul>
                 <li>Capture leads using a POST API link</li>
                 <li>Manage leads via dashboard</li>
-                <li>Integrate anywhere outside Optinwise</li>
+                <li>Integrate anywhere outside ContactBin</li>
               </ul>
               <p className="cardOtherButton">Read Docs</p>
             </div>

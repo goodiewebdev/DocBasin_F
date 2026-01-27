@@ -75,11 +75,11 @@ const Navbar = () => {
       <div style={styles.brand}>
         {isAuthenticated() ? (
           <Link to="/dashboard/" style={styles.link}>
-            Optinwise
+            ContactBin
           </Link>
         ) : (
           <Link to="/" style={styles.link}>
-            Optinwise
+            ContactBin
           </Link>
         )}
       </div>

@@ -116,9 +116,9 @@ const SignUp = () => {
         {message && <p className="formMessageTwo">{message}</p>}
 
         <p className="smallTexts2">
-          By signing up you agree to Optinwise's <b>Terms of Service</b> and{" "}
+          By signing up you agree to contactbin's <b>Terms of Service</b> and{" "}
           <b>Privacy Policy</b>, and agree to receive marketing communications
-          from Optinwise at the email address provided. This page is protected
+          from contactbin at the email address provided. This page is protected
           by reCAPTCHA and is subject to Google's <b>Terms of Service</b> and{" "}
           <b>Privacy Policy</b>.
         </p>
