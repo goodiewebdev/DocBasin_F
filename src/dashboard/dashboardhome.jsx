@@ -21,7 +21,7 @@ const ConfirmDelete = ({ title, onConfirm, onCancel }) => (
   </div>
 );
 
-const DashboardHome = ({ user }) => {
+const DashboardHome = () => {
   const [contactListCount, setContactListCount] = useState(0);
   const [latestContactList, setLatestContactList] = useState(null);
   const [loading, setLoading] = useState(true);
