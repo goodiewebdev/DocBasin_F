@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import Spinner from "../utils/spinner.jsx";
 import "./contactlistdetails.css";
 import {
   ArrowLeft,
@@ -148,7 +149,7 @@ const ContactListDetails = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
-  if (loading) return <div className="loading">Loading details...</div>;
+  if (loading) return <Spinner />;
   if (error) return <div className="error">Error: {error}</div>;
   if (!data) return <div className="error">No data found.</div>;
 

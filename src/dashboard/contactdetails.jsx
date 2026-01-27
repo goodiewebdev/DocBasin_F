@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { ArrowLeft, Trash2Icon, Edit3, Save, X } from "lucide-react";
 import { useModal } from "../modalcontext.jsx";
 import { useMessage } from "../messagecontext.jsx";
+import Spinner from "../utils/spinner.jsx";
 import "./contactdetails.css";
 
 const ContactDetails = () => {
@@ -133,7 +134,7 @@ const ContactDetails = () => {
     </div>
   );
 
-  if (loading) return <p className="loading">Loading contact...</p>;
+  if (loading) return <Spinner />;
   if (error) return <p className="error">{error}</p>;
 
   return (

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./usercontactlists.css";
-import { PencilIcon, Trash2Icon } from "lucide-react";
+import { Trash2Icon } from "lucide-react";
 import { useModal } from "../modalcontext.jsx";
 import { useMessage } from "../messagecontext.jsx";
+import Spinner from "../utils/spinner.jsx";
+
 
 const ConfirmDelete = ({ title, onConfirm, onCancel }) => (
   <div className="confirm-content">
@@ -89,7 +91,7 @@ const UserContactLists = () => {
   }, [navigate]);
 
   if (loading) {
-    return <p className="loadingText">Loading contact lists...</p>;
+    return <Spinner />;
   }
 
   return (

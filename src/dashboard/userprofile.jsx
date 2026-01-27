@@ -1,9 +1,10 @@
 import { MailIcon, User } from "lucide-react";
+import Spinner from "../utils/spinner.jsx";
 import "./userprofile.css";
 
 const UserProfile = ({ user }) => {
   if (!user) {
-    return <p>Loading profile...</p>;
+    return <Spinner />;
   }
 
   return (
