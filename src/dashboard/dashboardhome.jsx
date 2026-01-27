@@ -3,7 +3,6 @@ import { useNavigate, Link } from "react-router-dom";
 import { Trash2Icon } from "lucide-react";
 import { useModal } from "../modalcontext.jsx";
 import { useMessage } from "../messagecontext.jsx";
-import Spinner from "../utils/spinner.jsx";
 
 const ConfirmDelete = ({ title, onConfirm, onCancel }) => (
   <div className="confirm-content">
@@ -153,7 +152,7 @@ const DashboardHome = ({ user }) => {
 
       <section className="contactListsMain">
         {loading ? (
-          <Spinner />
+          <p className="loadingText">Loading latest contact list...</p>
         ) : latestContactList ? (
           <div className="contactListCard">
             <h3>{latestContactList.name}</h3>
