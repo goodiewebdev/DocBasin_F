@@ -21,7 +21,7 @@ const Home = () => {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:7000/api/users/signup", {
+      const response = await fetch("https://docbasin.onrender.com/api/users/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -44,7 +44,7 @@ const ContactListDetails = () => {
   const fetchDetails = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:7000/api/contactlist/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contactlist/${id}`, {
         headers: { Authorization: token },
       });
       const result = await res.json();
@@ -87,7 +87,7 @@ const ContactListDetails = () => {
 
   const updateListName = async () => {
     try {
-      const res = await fetch(`http://localhost:7000/api/contactlist/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contactlist/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -109,7 +109,7 @@ const ContactListDetails = () => {
   const deleteContact = async (contactId) => {
     try {
       const res = await fetch(
-        `http://localhost:7000/api/contact/${contactId}`,
+        `https://docbasin.onrender.com/api/contact/${contactId}`,
         {
           method: "DELETE",
           headers: { Authorization: localStorage.getItem("token") },
@@ -127,7 +127,7 @@ const ContactListDetails = () => {
   const deleteContactList = async (listId) => {
     try {
       const res = await fetch(
-        `http://localhost:7000/api/contactlist/${listId}`,
+        `https://docbasin.onrender.com/api/contactlist/${listId}`,
         {
           method: "DELETE",
           headers: { Authorization: localStorage.getItem("token") },
@@ -215,7 +215,7 @@ const ContactListDetails = () => {
 
       <code className="apiLink">
         <Link2Icon size={18} className="cldLIcon" /> POST:
-        http://localhost:7000/api/contact/{data._id}
+        https://docbasin.onrender.com/api/contact/{data._id}
       </code>
 
       <div className="countTotal">

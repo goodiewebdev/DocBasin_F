@@ -44,14 +44,14 @@ const DashboardHome = ({ user }) => {
       setLoading(true);
 
       const countRes = await fetch(
-        "http://localhost:7000/api/contactlist/mycontactlist",
+        "https://docbasin.onrender.com/api/contactlist/mycontactlist",
         { headers: { Authorization: token } },
       );
       const countData = await countRes.json();
       if (countRes.ok) setContactListCount(countData.length);
 
       const latestRes = await fetch(
-        "http://localhost:7000/api/contactlist/latest",
+        "https://docbasin.onrender.com/api/contactlist/latest",
         { headers: { Authorization: token } },
       );
       const latestData = await latestRes.json();
@@ -71,7 +71,7 @@ const DashboardHome = ({ user }) => {
       setCreating(true);
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:7000/api/contactlist", {
+      const res = await fetch("https://docbasin.onrender.com/api/contactlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const DashboardHome = ({ user }) => {
 
   const deleteContactList = async (id) => {
     try {
-      const res = await fetch(`http://localhost:7000/api/contactlist/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contactlist/${id}`, {
         method: "DELETE",
         headers: { Authorization: localStorage.getItem("token") },
       });

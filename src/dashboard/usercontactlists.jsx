@@ -32,7 +32,7 @@ const UserContactLists = () => {
 
   const deleteContactList = async (id) => {
     try {
-      const res = await fetch(`http://localhost:7000/api/contactlist/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contactlist/${id}`, {
         method: "DELETE",
         headers: { Authorization: localStorage.getItem("token") },
       });
@@ -61,7 +61,7 @@ const UserContactLists = () => {
         }
 
         const res = await fetch(
-          "http://localhost:7000/api/contactlist/mycontactlist",
+          "https://docbasin.onrender.com/api/contactlist/mycontactlist",
           {
             headers: {
               Authorization: token,

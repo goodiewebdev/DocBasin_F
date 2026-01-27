@@ -57,7 +57,7 @@ const UserDashboard = () => {
           return;
         }
 
-        const res = await fetch("http://localhost:7000/api/users/me", {
+        const res = await fetch("https://docbasin.onrender.com/api/users/me", {
           headers: {
             Authorization: token,
           },

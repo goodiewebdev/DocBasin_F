@@ -25,7 +25,7 @@ const ContactDetails = () => {
   const fetchContact = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:7000/api/contact/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contact/${id}`, {
         headers: { Authorization: token },
       });
 
@@ -47,7 +47,7 @@ const ContactDetails = () => {
 
   const handleUpdate = async () => {
     try {
-      const res = await fetch(`http://localhost:7000/api/contact/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contact/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const ContactDetails = () => {
 
   const deleteContact = async () => {
     try {
-      const res = await fetch(`http://localhost:7000/api/contact/${id}`, {
+      const res = await fetch(`https://docbasin.onrender.com/api/contact/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: localStorage.getItem("token"),

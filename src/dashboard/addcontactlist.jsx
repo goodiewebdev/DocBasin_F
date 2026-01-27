@@ -16,7 +16,7 @@ const AddContactList = () => {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://localhost:7000/api/contactlist", {
+      const response = await fetch("https://docbasin.onrender.com/api/contactlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
