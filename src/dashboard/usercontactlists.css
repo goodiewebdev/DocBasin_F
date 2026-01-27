@@ -36,13 +36,6 @@
   transform: translateY(-1px);
 }
 
-.loadingText {
-  padding: 40px;
-  text-align: center;
-  color: #6b7280;
-  font-size: 0.95rem;
-}
-
 .emptyState {
   text-align: center;
   color: #6b7280;

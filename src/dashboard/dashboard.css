@@ -195,6 +195,24 @@
   color: #dc2626;
 }
 
+.loadingText {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  animation: blink 1.4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+
 @media (max-width: 480px) {
   .contactListRowForm {
     flex-direction: column;
