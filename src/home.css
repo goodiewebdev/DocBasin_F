@@ -1,0 +1,213 @@
+.introHeader {
+  background-image: url("assets/image2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  column-gap: 20px;
+  padding: 30px 150px;
+}
+
+.yellowGreen {
+  color: #b7ff31;
+}
+
+.fboad {
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.introHeader form {
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  justify-self: center;
+}
+
+.introHeader form div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.introHeader form input {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border: 1.5px solid #444;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.introHeader form input:focus {
+  outline: none;
+  border-color: #7f3ff5;
+  box-shadow: 0 0 8px rgba(127, 63, 245, 0.3);
+}
+
+.introHeader form button {
+  width: 300px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #7f3ff5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.introHeader form button:hover {
+  background-color: #6f3ced;
+  transform: translateY(-1px);
+}
+
+.introHeader form button:disabled {
+  background-color: #b89fff;
+  cursor: not-allowed;
+  transform: translateY(-1px);
+}
+
+.introHeader .formMessage {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #f53f3f;
+  font-weight: 400;
+  text-align: center;
+}
+
+.smallTexts {
+  font-size: 0.7rem;
+  color: #444;
+  margin-top: 20px;
+  max-width: 290px;
+  text-align: center;
+  justify-self: center;
+}
+
+.formIntro {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.formIntroHighlight {
+  text-decoration: underline;
+  text-decoration-color: #7f3ff5;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
+.sectionTwo {
+  background-color: #eee5ff;
+  min-height: 400px;
+  padding: 50px 10px;
+}
+
+.sectionTwoSub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  gap: 50px;
+}
+
+.sectionTwoSubOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  padding: 0px 300px;
+}
+
+.sectionTwoTextTag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 15px;
+  width: fit-content;
+  border-radius: 100px;
+  border: none;
+  background-color: #cedbff;
+}
+
+.sectionTwoSubTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-self: center;
+  justify-items: center;
+  gap: 30px;
+  padding: 0px;
+  margin: 0px;
+  width: 90%;
+}
+
+.sectionTwoSubTwo .hcard {
+  background: linear-gradient(90deg, #7f3ff5 0%, #9b6bff 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.sectionTwoSubTwo ul li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.cardHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.cardOtherButton {
+  background-color: #4b1ba3;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 100px;
+  width: fit-content;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .introHeader {
+    flex-direction: column;
+    text-align: center;
+    min-height: 600px;
+    padding: 50px 100px;
+    gap: 50px;
+  }
+  .introHeader form {
+    margin-top: 20px;
+    padding: 25px 20px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .sectionTwoSubOne {
+    padding: 0px 20px;
+  }
+
+  .sectionTwoSubTwo {
+    flex-direction: column;
+  }
+}

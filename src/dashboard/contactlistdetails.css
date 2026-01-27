@@ -1,0 +1,261 @@
+.detailsContainer {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+.detailsContainer .cldHeading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #111;
+  margin: 35px 0px 0px 0px;
+}
+
+.dcButns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dcButn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.apiLink {
+  display: block;
+  font-size: 0.85rem;
+  color: cornflowerblue;
+  padding: 10px;
+  border-radius: 6px;
+  word-break: break-all;
+  margin-bottom: 20px;
+}
+
+.countTotal p {
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: -7px;
+}
+
+.tc {
+  color: #333;
+}
+
+.desktopView {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contactsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contactsTable th,
+.contactsTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.contactsTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.tableActions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trashIcon {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.trashIcon:hover {
+  color: #d32c3c;
+  transform: translateY(-1px);
+}
+
+.viewBtn2 {
+  background-color: #7f3ff5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.viewBtn2:hover {
+  background-color: #632fe0;
+  transform: translateY(-1px);
+}
+
+.mobileView {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cldArrow {
+  margin-bottom: -5px;
+}
+
+.cldLIcon {
+  margin-bottom: -5px;
+  transform: rotate(40deg);
+}
+
+.editNameForm {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.editNameForm input {
+  flex: 1;
+  max-width: 420px;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-bottom: 1px solid #d0d5dd;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.editNameForm input::placeholder {
+  color: #98a2b3;
+}
+
+.editNameForm input:focus {
+  border-color: #888;
+}
+
+.editNameForm button {
+  padding: 13px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #7f3ff5;
+  color: #ffffff;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.editNameForm button:hover {
+  background-color: #632fe0;
+}
+
+.editNameForm button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) inset;
+}
+
+.optionsInModal {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.optionsInModal button {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    display: flex;
+  }
+
+  button,
+  input,
+  select {
+    font-size: 16px !important;
+  }
+
+  .detailsContainer {
+    padding: 15px 10px;
+  }
+
+  .contactCard {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  }
+
+  .cardName {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    color: #111;
+  }
+
+  .cardEmail {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 4px 0 0 0;
+  }
+
+  .cardActions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mobileViewBtn,
+  .mobileTrashBtn {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .mobileViewBtn {
+    color: #7f3ff5;
+  }
+  .mobileTrashBtn {
+    color: #dc3545;
+  }
+
+  .mobileViewBtn:hover {
+    transform: translateY(-1px);
+  }
+  .mobileTrashBtn:hover {
+    transform: translateY(-1px);
+  }
+}

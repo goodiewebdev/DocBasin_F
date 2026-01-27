@@ -1,0 +1,114 @@
+.detailsContainer33 {
+  padding: 10px 15px;
+}
+.headerActions33 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.editForm33 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.editForm33 label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.editForm33 input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.editBtn33,
+.saveBtn33,
+.cancelBtn33 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.editBtn33 {
+  background: #f0f0f0;
+  color: #333;
+}
+.saveBtn33 {
+  background: #7f3ff5;
+  color: white;
+}
+.cancelBtn33 {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #666;
+}
+
+.editBtn33:hover {
+  background-color: rgb(250, 250, 250);
+  transform: matrix(-1px);
+}
+
+.editControls33 {
+  display: flex;
+  gap: 10px;
+}
+
+.actionb {
+  display: flex;
+  flex-direction: row;
+}
+
+.trashIcon33 {
+  margin-left: 15px;
+  margin-top: 5px;
+  color: crimson;
+}
+
+.contactInfo33 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  font-size: 0.95rem;
+}
+
+.contactInfo33 strong {
+  margin-right: 5px;
+  font-variant: small-caps;
+  font-size: 1rem;
+}
+
+.contactInfo33Name {
+  font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .headerActions33 {
+    flex-direction: row;
+  }
+
+  .editForm33 {
+    padding: 10px 5px;
+  }
+
+  .detailsContainer33 {
+    padding: 15px 10px;
+  }
+}

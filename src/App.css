@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family:
+    "Inter", "Roboto", "Open Sans", "Montserrat", "Poppins", "Nunito", "Lato",
+    sans-serif;
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #111;
+}
+
+.spaceUp {
+  margin-top: 72px;
+}
+
+.mobileMenuMainIcon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuMainIcon {
+    display: block;
+  }
+}

@@ -1,0 +1,14 @@
+.userProfileSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: fit-content;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.userProfileIcons {
+  margin-bottom: -5px;
+  margin-right: 5px;
+  color: #7f3ff5;
+}

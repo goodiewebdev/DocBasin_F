@@ -1,0 +1,136 @@
+.contactListsPage {
+  padding: 24px;
+  width: 100%;
+}
+
+.contactListsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.contactListsHeader h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.contactListsHeader button {
+  background: #7f3ff5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}
+
+.contactListsHeader button:hover {
+  background: #6a2fe0;
+  transform: translateY(-1px);
+}
+
+.loadingText {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.emptyState {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  padding: 40px 0;
+}
+
+.contactListsMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactListCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+
+.contactListCard h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contactListCard p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.contactListCard:hover {
+  transform: translateY(-1px);
+}
+
+.viewBtn {
+  margin-top: auto;
+  align-self: flex-start;
+  background: transparent;
+  color: #7f3ff5;
+  border: 1px solid #7f3ff5;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.viewBtn:hover {
+  background: #7f3ff5;
+  color: #ffffff;
+}
+
+.contactListsHeader .countTotal {
+  font-size: 0.9rem;
+  letter-spacing: -1px;
+  color: #333;
+  margin-bottom: -7px;
+}
+
+@media (max-width: 640px) {
+  .contactListsPage {
+    padding: 15px 10px;
+  }
+}
+
+.contactListActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.contactListActionsIcons {
+  color: #7f3ff5;
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+.contactListActionsIcons:hover {
+  color: #6a2fe0;
+}
