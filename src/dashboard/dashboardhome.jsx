@@ -122,7 +122,7 @@ const DashboardHome = ({ user }) => {
   return (
     <>
       <header className="topbar">
-        <div className="user-info">{user && <span>{user.name}</span>}</div>
+        <div className="user-info">Overview</div>
       </header>
 
       <section className="content">
