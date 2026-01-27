@@ -97,7 +97,7 @@ const Navbar = () => {
         ) : (
           <>
             <div className="rightMenuItems">
-              <Link to="/dashboard/userprofile">
+              <Link to="/dashboard">
                 <div className="userDetailsRight">
                   <div>
                     <UserRound size={25} className="userDetailsRightIcon" />

@@ -143,6 +143,7 @@
   flex-direction: row;
   gap: 12px;
   align-items: center;
+  margin-top: -10px;
 }
 
 .contactListRowForm input {
@@ -223,6 +224,10 @@
   .contactListRowForm button {
     width: 100%;
   }
+
+  .contactListsMain {
+  padding: 3px 12px;
+}
 }
 
 @media (max-width: 768px) {
