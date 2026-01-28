@@ -74,11 +74,11 @@ const Navbar = () => {
     <nav style={styles.navbar}>
       <div style={styles.brand}>
         {isAuthenticated() ? (
-          <Link to="/dashboard/" style={styles.logo}>
+          <Link to="/dashboard/" style={styles.logo} className="mainlogo">
             ContactBin
           </Link>
         ) : (
-          <Link to="/" style={styles.link}>
+          <Link to="/" style={styles.logo} className="mainlogo">
             ContactBin
           </Link>
         )}
@@ -201,6 +201,9 @@ const styles = {
     fontWeight: "bold",
     fontSize: "20px",
   },
+  logo: {
+    color: "#7f3ff5",
+  },
   menu: {
     display: "flex",
     gap: "25px",
@@ -209,9 +212,6 @@ const styles = {
   link: {
     color: "#111",
     textDecoration: "none",
-  },
-  logo: {
-    color: "#7f3ff5",
   },
   user: {
     marginRight: "10px",
