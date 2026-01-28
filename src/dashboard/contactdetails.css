@@ -1,5 +1,8 @@
 .detailsContainer33 {
-  padding: 10px 15px;
+  padding: 20px;
+  min-height: 100vh;
+  border-radius: 10px;
+  background-color: #fff;
 }
 .headerActions33 {
   display: flex;
