@@ -50,7 +50,7 @@
 .introHeader form input:focus {
   outline: none;
   border-color: #305CDE;
-  box-shadow: 0 0 8px rgba(127, 63, 245, 0.3);
+  box-shadow: 0 0 8px rgba(63, 105, 245, 0.3);
 }
 
 .introHeader form button {
@@ -72,7 +72,7 @@
 }
 
 .introHeader form button:disabled {
-  background-color: #b89fff;
+  background-color: #9fa9ff;
   cursor: not-allowed;
   transform: translateY(-1px);
 }
@@ -110,7 +110,7 @@
 }
 
 .sectionTwo {
-  background-color: #eee5ff;
+  background-color: #e5eeff;
   min-height: 400px;
   padding: 50px 10px;
 }
@@ -178,7 +178,7 @@
 }
 
 .cardOtherButton {
-  background-color: #4b1ba3;
+  background-color: #1b3fa3;
   padding: 5px 20px;
   border: none;
   border-radius: 100px;

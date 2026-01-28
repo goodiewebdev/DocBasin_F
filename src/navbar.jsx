@@ -202,7 +202,7 @@ const styles = {
     fontSize: "20px",
   },
   logo: {
-    color: "#7f3ff5",
+    color: "#305CDE",
   },
   menu: {
     display: "flex",
@@ -217,7 +217,7 @@ const styles = {
     marginRight: "10px",
   },
   signupButton: {
-    backgroundColor: "#7f3ff5",
+    backgroundColor: "#305CDE",
     padding: "10px 15px",
     border: "none",
     color: "#fff",
@@ -229,7 +229,7 @@ const styles = {
   mobileMenuIcon: {
     marginBottom: "-3px",
     marginRight: "10px",
-    color: "#7f3ff5",
+    color: "#305CDE",
   },
   userDetailsRightIcon: {
     color: "#fff",
