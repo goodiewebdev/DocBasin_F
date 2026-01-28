@@ -207,17 +207,17 @@ const styles = {
     alignItems: "center",
   },
   link: {
-    color: "#7f3ff5",
+    color: "#111",
     textDecoration: "none",
   },
   user: {
     marginRight: "10px",
   },
   signupButton: {
-    backgroundColor: "#fff",
+    backgroundColor: "#7f3ff5",
     padding: "10px 15px",
     border: "none",
-    color: "#7f3ff5",
+    color: "#fff",
     borderRadius: "4px",
     cursor: "pointer",
     fontSize: "1rem",
