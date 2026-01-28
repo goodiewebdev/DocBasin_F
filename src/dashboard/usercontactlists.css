@@ -35,7 +35,7 @@
 }
 
 .contactListsHeader button:hover {
-  background: #6a2fe0;
+  background: #234cc5;
   transform: translateY(-1px);
 }
 
@@ -130,5 +130,5 @@
 }
 
 .contactListActionsIcons:hover {
-  color: #6a2fe0;
+  color: #234cc5;
 }
