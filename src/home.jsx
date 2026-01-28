@@ -81,7 +81,6 @@ const Home = () => {
 
           {isAuthenticated ? (
             <p className="formMessage">
-              You’re already signed in. Logout to create a new account.
             </p>
           ) : (
             <form onSubmit={handleSubmit}>
