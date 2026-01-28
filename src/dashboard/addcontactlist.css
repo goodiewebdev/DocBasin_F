@@ -36,12 +36,12 @@
 }
 
 .addContactListForm input:focus {
-  border-color: #7f3ff5;
+  border-color: #305CDE;
 }
 
 .addContactListForm button {
   padding: 12px;
-  background: #7f3ff5;
+  background: #305CDE;
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 600;
@@ -54,7 +54,7 @@
 }
 
 .addContactListForm button:hover:not(:disabled) {
-  background: #6a2fe0;
+  background: #234cc5;
   transform: translateY(-1px);
 }
 

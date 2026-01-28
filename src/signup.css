@@ -41,13 +41,13 @@
 }
 
 .input-group:focus {
-  border-color: 1px solid #7f3ff5;
+  border-color: 1px solid #305CDE;
 }
 
 .signup-form button {
   width: 100%;
   padding: 12px;
-  background: #7f3ff5;
+  background: #305CDE;
   color: white;
   border: none;
   border-radius: 8px;
@@ -56,7 +56,7 @@
 }
 
 .signup-form button:hover {
-  background: #6f3ced;
+  background: #234cc5;
 }
 
 .signup-image {
@@ -84,7 +84,7 @@
 }
 
 .linkToLink {
-  color: #7f3ff5;
+  color: #305CDE;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -101,7 +101,7 @@
 }
 
 .toggle-password:hover {
-  color: #7f3ff5;
+  color: #305CDE;
 }
 
 .formMessageTwo {

@@ -49,7 +49,7 @@
 
 .introHeader form input:focus {
   outline: none;
-  border-color: #7f3ff5;
+  border-color: #305CDE;
   box-shadow: 0 0 8px rgba(127, 63, 245, 0.3);
 }
 
@@ -59,7 +59,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  background-color: #7f3ff5;
+  background-color: #305CDE;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -67,7 +67,7 @@
 }
 
 .introHeader form button:hover {
-  background-color: #6f3ced;
+  background-color: #234cc5;
   transform: translateY(-1px);
 }
 
@@ -104,7 +104,7 @@
 
 .formIntroHighlight {
   text-decoration: underline;
-  text-decoration-color: #7f3ff5;
+  text-decoration-color: #305CDE;
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
@@ -159,7 +159,7 @@
 }
 
 .sectionTwoSubTwo .hcard {
-  background: linear-gradient(90deg, #7f3ff5 0%, #9b6bff 100%);
+  background: linear-gradient(90deg, #305CDE 0%, #4a70e4 100%);
   color: white;
   padding: 30px;
   border-radius: 10px;

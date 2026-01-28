@@ -62,8 +62,8 @@
 
 .menu-item:hover,
 .menu-item.active {
-  background: #7f3ff513;
-  color: #7f3ff5;
+  background: #305CDE13;
+  color: #305CDE;
 }
 
 .menu-item.logout {
@@ -176,7 +176,7 @@
 
 .contactListRowForm button {
   padding: 12px 20px;
-  background: #7f3ff5;
+  background: #305CDE;
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 600;
@@ -190,7 +190,7 @@
 }
 
 .contactListRowForm button:hover:not(:disabled) {
-  background: #6a2fe0;
+  background: #234cc5;
   transform: translateY(-1px);
 }
 
@@ -230,11 +230,11 @@
 }
 
 .menu-item.active .dashboardSidebarIcon {
-  color: #7f3ff5;
+  color: #305CDE;
 }
 
 .menu-item:hover .dashboardSidebarIcon {
-  color: #7f3ff5;
+  color: #305CDE;
 }
 
 

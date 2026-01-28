@@ -97,7 +97,7 @@
 }
 
 .viewBtn2 {
-  background-color: #7f3ff5;
+  background-color: #305CDE;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -106,7 +106,7 @@
 }
 
 .viewBtn2:hover {
-  background-color: #632fe0;
+  background-color: #234cc5;
   transform: translateY(-1px);
 }
 
@@ -162,7 +162,7 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  background-color: #7f3ff5;
+  background-color: #305CDE;
   color: #ffffff;
   transition:
     background-color 0.2s ease,
@@ -171,7 +171,7 @@
 }
 
 .editNameForm button:hover {
-  background-color: #632fe0;
+  background-color: #234cc5;
 }
 
 .editNameForm button:active {
@@ -202,7 +202,7 @@
 }
 
 .optionsInModal button:hover {
-  background: #7f3ff515;
+  background: #305CDE15;
 }
 
 @media (max-width: 768px) {
@@ -264,7 +264,7 @@
   }
 
   .mobileViewBtn {
-    color: #7f3ff5;
+    color: #305CDE;
   }
   .mobileTrashBtn {
     color: #dc3545;

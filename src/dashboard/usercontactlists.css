@@ -21,7 +21,7 @@
 }
 
 .contactListsHeader button {
-  background: #7f3ff5;
+  background: #305CDE;
   color: #ffffff;
   border: none;
   padding: 10px 16px;
@@ -86,8 +86,8 @@
   margin-top: auto;
   align-self: flex-start;
   background: transparent;
-  color: #7f3ff5;
-  border: 1px solid #7f3ff5;
+  color: #305CDE;
+  border: 1px solid #305CDE;
   padding: 6px 12px;
   border-radius: 6px;
   font-size: 0.85rem;
@@ -99,7 +99,7 @@
 }
 
 .viewBtn:hover {
-  background: #7f3ff5;
+  background: #305CDE;
   color: #ffffff;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .contactListActionsIcons {
-  color: #7f3ff5;
+  color: #305CDE;
   margin-left: 10px;
   margin-bottom: -5px;
 }
