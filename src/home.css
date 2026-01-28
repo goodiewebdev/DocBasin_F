@@ -15,7 +15,21 @@
 }
 
 .yellowGreen {
-  color: #b7ff31;
+  color: #ffa500;
+   display: inline-block;
+  animation: zoomIn 1.4s ease-in-out infinite;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .fboad {
@@ -110,7 +124,7 @@
 }
 
 .sectionTwo {
-  background-color: #e5eeff;
+  background-color: #f0f5ff;
   min-height: 400px;
   padding: 50px 10px;
 }
@@ -159,7 +173,7 @@
 }
 
 .sectionTwoSubTwo .hcard {
-  background: linear-gradient(90deg, #305CDE 0%, #4a70e4 100%);
+  background: linear-gradient(90deg, #305CDE 0%, #5f82eb 100%);
   color: white;
   padding: 30px;
   border-radius: 10px;
@@ -169,6 +183,7 @@
 .sectionTwoSubTwo ul li {
   list-style-type: none;
   margin-top: 15px;
+  font-size: 1rem;
 }
 
 .cardHeading {
@@ -178,13 +193,14 @@
 }
 
 .cardOtherButton {
-  background-color: #1b3fa3;
-  padding: 5px 20px;
+  background-color: #ffa500;
+  padding: 5px 15px;
   border: none;
   border-radius: 100px;
   width: fit-content;
   font-size: 0.9rem;
   margin-top: 30px;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
