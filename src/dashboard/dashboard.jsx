@@ -83,32 +83,45 @@ const UserDashboard = () => {
       {/* Sidebar */}
       <aside className="sidebar">
         <nav className="sidebar-menu">
-          <NavLink to="/dashboard" end className="menu-item">
-            <div className="active">
-              <LayoutDashboard size={18} className="dashboardSidebarIcon" />
-              <span>Dashboard</span>
-            </div>
+          <NavLink
+            to="/dashboard"
+            end
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            <LayoutDashboard size={18} className="dashboardSidebarIcon" />
+            <span>Dashboard</span>
           </NavLink>
 
-          <NavLink to="/dashboard/addcontactlist" className="menu-item">
-            <div>
-              <PlusIcon size={18} className="dashboardSidebarIcon" />
-              <span>Add Contact List</span>
-            </div>
+          <NavLink
+            to="/dashboard/addcontactlist"
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            <PlusIcon size={18} className="dashboardSidebarIcon" />
+            <span>Add Contact List</span>
           </NavLink>
 
-          <NavLink to="/dashboard/mycontactlists" className="menu-item">
-            <div>
-              <ClipboardCheck size={18} className="dashboardSidebarIcon" />
-              <span>My Contact Lists</span>
-            </div>
+          <NavLink
+            to="/dashboard/mycontactlists"
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            <ClipboardCheck size={18} className="dashboardSidebarIcon" />
+            <span>My Contact Lists</span>
           </NavLink>
 
-          <NavLink to="/dashboard/userprofile" className="menu-item">
-            <div>
-              <User size={18} className="dashboardSidebarIcon" />
-              <span>Profile</span>
-            </div>
+          <NavLink
+            to="/dashboard/userprofile"
+            className={({ isActive }) =>
+              isActive ? "menu-item active" : "menu-item"
+            }
+          >
+            <User size={18} className="dashboardSidebarIcon" />
+            <span>Profile</span>
           </NavLink>
 
           <div

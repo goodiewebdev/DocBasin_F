@@ -12,7 +12,7 @@
 .sidebar {
   width: 230px;
   padding-top: 75px;
-  background: #f7f7ff;
+  background: #fff;
   color: #111;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   left: 0;
   top: 0;
   transition: transform 0.3s ease;
-  border-right: 1px solid #eee;
+  border-right: 1px solid #fdfdfd;
   font-size: 0.95rem;
 }
 
@@ -46,7 +46,7 @@
 .dashboardSidebarIcon {
   color: #222;
   margin-bottom: -3px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .menu-item {
@@ -62,7 +62,8 @@
 
 .menu-item:hover,
 .menu-item.active {
-  background: #b892ff21;
+  background: #7f3ff513;
+  color: #7f3ff5;
 }
 
 .menu-item.logout {
@@ -80,11 +81,21 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
+  background-color: #fafafa;
+}
+
+.dbh-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  row-gap: 20px;
 }
 
 .topbar {
-  background: #f7f7ff;
-  color: #7f3ff5;
+  color: #111;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -119,19 +130,20 @@
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
 }
 
 .card h3 {
   margin-bottom: 10px;
-  font-size: 16px;
-  color: #555;
+  font-size: 1.1rem;
+  color: #111;
+  font-weight: 400;
 }
 
 .card p {
   font-size: 28px;
   font-weight: bold;
-  color: #7f3ff5;
+  color: #222;
 }
 
 .contactListRowForm {
@@ -143,7 +155,7 @@
   flex-direction: row;
   gap: 12px;
   align-items: center;
-  margin-top: -10px;
+  margin-top: -25px;
 }
 
 .contactListRowForm input {
@@ -151,7 +163,7 @@
   padding: 10px;
   font-size: 0.95rem;
   border-radius: 4px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #e5e7eb;
   outline: none;
   transition:
     border 0.2s,
@@ -159,7 +171,7 @@
 }
 
 .contactListRowForm input:focus {
-  border-color: #a0a0a0;
+  border-color: #c0c0c0;
 }
 
 .contactListRowForm button {
@@ -196,6 +208,10 @@
   color: #dc2626;
 }
 
+.dbh-main .contactListsMain {
+  padding: 0px 10px;
+}
+
 .loadingText {
   padding: 40px;
   text-align: center;
@@ -211,6 +227,14 @@
   50% {
     opacity: 0.4;
   }
+}
+
+.menu-item.active .dashboardSidebarIcon {
+  color: #7f3ff5;
+}
+
+.menu-item:hover .dashboardSidebarIcon {
+  color: #7f3ff5;
 }
 
 

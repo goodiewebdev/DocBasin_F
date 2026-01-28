@@ -1,19 +1,19 @@
 .detailsContainer {
-  padding: 10px 15px;
-  margin-top: 10px;
+  padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 100%;
   box-sizing: border-box;
   font-size: 0.95rem;
+  min-height: 100vh;
 }
 
 .detailsContainer .cldHeading {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.55rem;
+  font-weight: 400;
   color: #111;
-  margin: 35px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .dcButns {
@@ -28,6 +28,7 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
+  background-color: #fcfcfc;
 }
 
 .apiLink {
@@ -38,6 +39,12 @@
   border-radius: 6px;
   word-break: break-all;
   margin-bottom: 20px;
+}
+
+.countTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .countTotal p {
@@ -183,8 +190,19 @@
   padding: 12px;
   border-radius: 8px;
   background: #fff;
-  text-align: center;
-  border: none;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  width: fit-content;
+}
+
+.optionsInModalI {
+  margin-bottom: -4px;
+  margin-right: 7px;
+  color: #333;
+}
+
+.optionsInModal button:hover {
+  background: #7f3ff515;
 }
 
 @media (max-width: 768px) {

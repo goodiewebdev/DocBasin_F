@@ -189,8 +189,8 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     padding: "20px",
-    backgroundColor: "#7f3ff5",
-    color: "#fff",
+    backgroundColor: "#fff",
+    color: "black",
     alignItems: "center",
     position: "fixed",
     width: "100%",
@@ -207,7 +207,7 @@ const styles = {
     alignItems: "center",
   },
   link: {
-    color: "#fff",
+    color: "#7f3ff5",
     textDecoration: "none",
   },
   user: {

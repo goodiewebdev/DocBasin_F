@@ -1,3 +1,9 @@
+.addFormContainer {
+  background-color: white;
+  border-radius: 10px;
+  min-height: 100vh;
+}
+
 .addContactListForm {
   max-width: 420px;
   width: 100%;

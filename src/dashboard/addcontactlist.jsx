@@ -45,7 +45,8 @@ const AddContactList = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="addContactListForm">
+      <div className="addFormContainer">
+        <form onSubmit={handleSubmit} className="addContactListForm">
         <h2>Add Contact List</h2>
         <input
           type="text"
@@ -61,6 +62,7 @@ const AddContactList = () => {
           {loading ? "Creating..." : "Create Contact List"}
         </button>
       </form>
+      </div>
     </>
   );
 };

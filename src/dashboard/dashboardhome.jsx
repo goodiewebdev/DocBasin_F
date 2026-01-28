@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { Trash2Icon } from "lucide-react";
 import { useModal } from "../modalcontext.jsx";
 import { useMessage } from "../messagecontext.jsx";
+import  Spinner2 from "../utils/spinner2.jsx";
 
 const ConfirmDelete = ({ title, onConfirm, onCancel }) => (
   <div className="confirm-content">
@@ -121,15 +122,16 @@ const DashboardHome = () => {
 
   return (
     <>
-      <header className="topbar">
+      <div className="dbh-main">
+        {/*<header className="topbar">
         <div className="user-info">Overview</div>
-      </header>
+      </header>*/}
 
       <section className="content">
         <div className="cards">
           <div className="card">
             <h3>Total Contact Lists</h3>
-            <p>{loading ? "…" : contactListCount}</p>
+            <p>{loading ? "0" : contactListCount}</p>
           </div>
 
           <div className="card">
@@ -144,15 +146,15 @@ const DashboardHome = () => {
         </div>
       </section>
 
-      <header className="topbar space-dbh">
+      {/*<header className="topbar space-dbh">
         <div className="user-info">
           <span>Latest Updated Contact List</span>
         </div>
-      </header>
+      </header>*/}
 
       <section className="contactListsMain">
         {loading ? (
-          <p className="loadingText">Loading latest contact list...</p>
+          <Spinner2 />
         ) : latestContactList ? (
           <div className="contactListCard">
             <h3>{latestContactList.name}</h3>
@@ -197,11 +199,11 @@ const DashboardHome = () => {
 
       <div className="space-dbh"></div>
 
-      <header className="topbar space-dbh">
+      {/*<header className="topbar space-dbh">
         <div className="user-info">
           <span>Create Contact List</span>
         </div>
-      </header>
+      </header>*/}
 
       <section className="content">
         <form className="contactListRowForm" onSubmit={createContactList}>
@@ -218,6 +220,7 @@ const DashboardHome = () => {
           </button>
         </form>
       </section>
+      </div>
     </>
   );
 };

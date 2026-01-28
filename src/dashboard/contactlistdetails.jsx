@@ -8,6 +8,10 @@ import {
   MoreHorizontal,
   Trash2Icon,
   Eye,
+  Database,
+  DownloadIcon,
+  Edit2Icon,
+  DeleteIcon,
 } from "lucide-react";
 import { useModal } from "../modalcontext.jsx";
 import { useMessage } from "../messagecontext.jsx";
@@ -155,48 +159,6 @@ const ContactListDetails = () => {
 
   return (
     <div className="detailsContainer">
-      <div className="dcButns">
-        <button onClick={() => navigate(-1)} className="dcButn">
-          <ArrowLeft size={20} className="cldArrow" /> Back
-        </button>
-
-        <MoreHorizontal
-          size={24}
-          className="cldOptions"
-          style={{ cursor: "pointer" }}
-          onClick={() =>
-            openModal(
-              <div className="optionsInModal">
-                <button onClick={exportToCSV} className="exportBtn">
-                  <Link>Export CSV</Link>
-                </button>
-                <button
-                  onClick={() => {
-                    setIsEditingName(true);
-                    closeModal();
-                  }}
-                >
-                  <Link>Update</Link>
-                </button>
-                <button
-                  className="delete-option"
-                  onClick={() =>
-                    openModal(
-                      <ConfirmDelete
-                        title={data.name}
-                        onCancel={closeModal}
-                        onConfirm={() => deleteContactList(data._id)}
-                      />,
-                    )
-                  }
-                >
-                  <Link>Delete</Link>
-                </button>
-              </div>,
-            )
-          }
-        />
-      </div>
 
       {isEditingName ? (
         <div className="editNameForm">
@@ -224,6 +186,42 @@ const ContactListDetails = () => {
           TOTAL CONTACTS:{" "}
           <span className="tc">{data.contacts?.length || 0}</span>
         </p>
+        <MoreHorizontal
+          size={24}
+          className="cldOptions"
+          style={{ cursor: "pointer" }}
+          onClick={() =>
+            openModal(
+              <div className="optionsInModal">
+                <button onClick={exportToCSV} className="exportBtn">
+                  <DownloadIcon size={20} className="optionsInModalI"/><Link>Export CSV</Link>
+                </button>
+                <button
+                  onClick={() => {
+                    setIsEditingName(true);
+                    closeModal();
+                  }}
+                >
+                  <Edit2Icon size={20} className="optionsInModalI"/> <Link> Update</Link>
+                </button>
+                <button
+                  className="delete-option"
+                  onClick={() =>
+                    openModal(
+                      <ConfirmDelete
+                        title={data.name}
+                        onCancel={closeModal}
+                        onConfirm={() => deleteContactList(data._id)}
+                      />,
+                    )
+                  }
+                >
+                  <DeleteIcon size={20} className="optionsInModalI"/><Link> Delete</Link>
+                </button>
+              </div>,
+            )
+          }
+        />
       </div>
 
       <div className="desktopView">

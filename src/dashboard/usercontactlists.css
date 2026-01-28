@@ -1,6 +1,9 @@
 .contactListsPage {
-  padding: 24px;
+  padding: 20px;
   width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 100vh;
 }
 
 .contactListsHeader {
@@ -63,8 +66,10 @@
 }
 
 .contactListCard h3 {
-  margin: 0;
-  font-size: 1rem;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #111;
+  font-weight: 400;
 }
 
 .contactListCard p {
