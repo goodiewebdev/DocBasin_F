@@ -27,6 +27,7 @@ const ConfirmDelete = ({ title, onConfirm, onCancel }) => (
 const UserContactLists = () => {
   const [lists, setLists] = useState([]);
   const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
   const { showMessage } = useMessage();
@@ -103,7 +104,7 @@ const UserContactLists = () => {
         </button>
       </div>
 
-      {message && <p className="formMessageTwo error">{message}</p>}
+      {/*{message && <p className="formMessageTwo error">{message}</p>}*/}
 
       {lists.length === 0 ? (
         <p className="emptyState">No contact lists found.</p>
