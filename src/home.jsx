@@ -44,7 +44,7 @@ const Home = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(formData),
-        }
+        },
       );
 
       const data = await response.json();
@@ -66,7 +66,7 @@ const Home = () => {
   return (
     <>
       <section className="introHeader">
-        <div>
+        <div className="itextContainer">
           <h1>
             Build waitlist, <span className="yellowGreen">capture leads</span>{" "}
             seamlessly
@@ -74,14 +74,13 @@ const Home = () => {
           <p className="fboad">For non developers and developers</p>
         </div>
 
-        <div>
+        <div className="formContainer">
           <p className="formIntro">
             Use this tool <span className="formIntroHighlight">for FREE</span>
           </p>
 
           {isAuthenticated ? (
-            <p className="formMessage">
-            </p>
+            <p className="formMessage"></p>
           ) : (
             <form onSubmit={handleSubmit}>
               <div>
@@ -122,9 +121,9 @@ const Home = () => {
           <p className="smallTexts">
             By signing up you agree to ContactBin's <b>Terms of Service</b> and{" "}
             <b>Privacy Policy</b>, and agree to receive marketing communications
-            from ContactBin at the email address provided. This page is protected
-            by reCAPTCHA and is subject to Google's <b>Terms of Service</b> and{" "}
-            <b>Privacy Policy</b>.
+            from ContactBin at the email address provided. This page is
+            protected by reCAPTCHA and is subject to Google's{" "}
+            <b>Terms of Service</b> and <b>Privacy Policy</b>.
           </p>
         </div>
       </section>

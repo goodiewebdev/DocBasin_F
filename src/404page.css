@@ -1,0 +1,153 @@
+.nf-container {
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(1200px 600px at 10% 10%, #1b2140, var(--nf-bg));
+  color: var(--nf-text);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Inter,
+    sans-serif;
+  margin-top: -100px;
+}
+
+.nf-card {
+  max-width: 480px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-radius: var(--nf-radius);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  animation: nf-fade-up 0.6s ease-out both;
+}
+
+.nf-badge {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nf-accent);
+  background: rgba(99, 102, 241, 0.12);
+  border-radius: 999px;
+}
+
+.nf-title {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.nf-description {
+  margin: 1rem 0 2rem;
+  font-size: 1rem;
+  color: var(--nf-muted);
+}
+
+.nf-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nf-btn {
+  padding: 0.75rem 1.1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+}
+
+.nf-btn-primary {
+  background: var(--nf-accent);
+  color: white;
+}
+
+.nf-btn-primary:hover {
+  background: var(--nf-accent-hover);
+  transform: translateY(-1px);
+}
+
+.nf-btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--nf-text);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nf-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes nf-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nf-card {
+    animation: none;
+  }
+}
+
+.nf-btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition:
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.nf-btn-primary {
+  background: #305cde;
+  color: #ffffff;
+}
+
+.nf-btn-primary:hover {
+  background: #2a52c7;
+  transform: translateY(-1px);
+}
+
+.nf-btn-primary:active {
+  transform: translateY(0);
+}
+
+.nf-btn-secondary {
+  background: transparent;
+  color: #111;
+  border: 1px solid rgba(48, 92, 222, 0.4);
+}
+
+.nf-btn-secondary:hover {
+  background: rgba(211, 211, 211, 0.12);
+  border-color: rgba(48, 92, 222, 0.6);
+}
+
+.nf-btn:focus-visible {
+  outline: none;
+}
