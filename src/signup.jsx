@@ -131,12 +131,12 @@ const SignUp = () => {
         </p>
       </div>
 
-      <div className="signup-image">
+      {/*<div className="signup-image">
         <img
           src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
           alt="Signup"
         />
-      </div>
+      </div>*/}
     </div>
   );
 };

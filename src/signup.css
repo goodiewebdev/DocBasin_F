@@ -1,22 +1,33 @@
 .signup-container {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  background-color: #f9f9f9;
 }
 
 .signup-form {
-  flex: 1;
-  padding: 60px;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .signup-form h2 {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .signup-form form {
-  max-width: 400px;
+  width: 100%;
 }
 
 .input-group {
@@ -26,11 +37,17 @@
   border: 1px solid #ccc;
   padding: 12px;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+
+.input-group:focus-within {
+  border-color: #305cde;
 }
 
 .input-group svg {
   color: #555;
+  flex-shrink: 0;
 }
 
 .input-group input {
@@ -38,55 +55,58 @@
   outline: none;
   width: 100%;
   font-size: 0.9rem;
-}
-
-.input-group:focus {
-  border-color: 1px solid #305CDE;
+  background: transparent;
 }
 
 .signup-form button {
   width: 100%;
   padding: 12px;
-  background: #305CDE;
+  background: #305cde;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 5px;
+  transition: background 0.2s;
 }
 
 .signup-form button:hover {
   background: #234cc5;
 }
 
-.signup-image {
-  flex: 1;
+.signup-form button:disabled {
+  background: #9daeff;
+  cursor: not-allowed;
 }
 
-.signup-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.signup-image {
+  display: none;
 }
 
 .smallTexts2 {
   font-size: 0.7rem;
-  color: #444;
-  margin-top: 20px;
-  max-width: 400px;
-  justify-self: center;
+  color: #666;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .textToLoginLink {
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 0.9rem;
   color: #111;
+  text-align: center;
 }
 
 .linkToLink {
-  color: #305CDE;
-  font-size: 1rem;
+  color: #305cde;
+  font-weight: 500;
   text-decoration: none;
+}
+
+.linkToLink:hover {
+  text-decoration: underline;
 }
 
 .password-group {
@@ -98,30 +118,28 @@
   color: #555;
   display: flex;
   align-items: center;
+  padding-left: 5px;
 }
 
 .toggle-password:hover {
-  color: #305CDE;
-}
-
-.formMessageTwo {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #f53f3f;
-  font-weight: 400;
+  color: #305cde;
 }
 
 @media (max-width: 768px) {
   .signup-container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .signup-image {
-    height: 250px;
+    padding-top: 20px;
+    background-color: white;
   }
 
   .signup-form {
-    padding: 0px 20px;
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .signup-form h2 {
+    margin-bottom: 15px;
+    margin-top: 5px;
   }
 }

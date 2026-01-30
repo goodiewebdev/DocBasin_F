@@ -10,6 +10,7 @@ import ScrollToTop from "./utils/scrolltotop.jsx";
 import { ModalProvider } from "./modalcontext.jsx";
 import { MessageProvider } from "./messagecontext.jsx";
 import NotFound from "./404page.jsx";
+import UserEmailVerification from "./useremailverification.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/verifyuser/:emailVerificationToken" element={<UserEmailVerification />} />
 
           <Route
             path="/dashboard/*"
