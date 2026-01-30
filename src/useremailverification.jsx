@@ -58,11 +58,6 @@ const UserEmailVerification = () => {
   const ResendVerificationLink = async () => {
     try {
       await fetch("https://docbasin.onrender.com/api/users/resend-verification", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: token,
-        },
         body: JSON.stringify({ email: user?.email }),
       });
       alert("Verification link resent!");
