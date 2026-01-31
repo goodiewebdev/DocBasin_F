@@ -44,8 +44,7 @@ const UserDashboard = () => {
     closeModal();
     navigate("/login");
     showMessage("Logged out successfully", "success");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [navigate, showMessage]);
+  }, [navigate, showMessage, closeModal]);
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -69,6 +68,13 @@ const UserDashboard = () => {
         }
 
         const data = await res.json();
+
+        if (data && data.isAccountVerified === false) {
+          showMessage("Please verify your email to access the dashboard.", "error");
+          navigate("/verifyemail");
+          return;
+        }
+
         setUser(data);
       } catch (err) {
         console.error("Error fetching user:", err.message);
@@ -76,11 +82,14 @@ const UserDashboard = () => {
     };
 
     fetchUser();
-  }, [handleLogout]);
+  }, [handleLogout, navigate, showMessage]);
+
+  if (!user) {
+    return null;
+  }
 
   return (
     <div className="dashboard">
-      {/* Sidebar */}
       <aside className="sidebar">
         <nav className="sidebar-menu">
           <NavLink
@@ -131,7 +140,7 @@ const UserDashboard = () => {
                 <ConfirmLogout
                   onCancel={closeModal}
                   onConfirm={() => handleLogout()}
-                />,
+                />
               )
             }
           >
@@ -141,7 +150,6 @@ const UserDashboard = () => {
         </nav>
       </aside>
 
-      {/* Main content */}
       <main className="main">
         <Routes>
           <Route path="/" element={<DashboardHome user={user} />} />

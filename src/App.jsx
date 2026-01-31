@@ -12,6 +12,7 @@ import { MessageProvider } from "./messagecontext.jsx";
 import NotFound from "./404page.jsx";
 import ForgotPassword from "./forgotpassword.jsx";
 import ResetPassword from "./resetpassword.jsx";
+import VerifyEmail from "./verifyemail.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/resetpassword" element={<ResetPassword />} />
+         <Route path="/verifyemail" element={<VerifyEmail />} />
 
           <Route
             path="/dashboard/*"
