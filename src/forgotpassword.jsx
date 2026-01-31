@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Mail } from "lucide-react";
 import { useMessage } from "./messagecontext";
-import "./signup.css"; 
+import "./forgotpassword.css"; 
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -15,7 +15,7 @@ const ForgotPassword = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("https://docbasin.onrender.com/api/users/send-reset-otp", {
+      const res = await fetch("https://docbasin.onrender.com/api/users/sendresetotp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const ForgotPassword = () => {
         localStorage.setItem("resetEmail", email);
         
         setTimeout(() => {
-          navigate("/reset-password");
+          navigate("/resetpassword");
         }, 1500);
       } else {
         showMessage(data.message || "Could not find an account with that email.", "error");

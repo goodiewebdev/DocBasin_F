@@ -11,6 +11,7 @@ import { ModalProvider } from "./modalcontext.jsx";
 import { MessageProvider } from "./messagecontext.jsx";
 import NotFound from "./404page.jsx";
 import ForgotPassword from "./forgotpassword.jsx";
+import ResetPassword from "./resetpassword.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/resetpassword" element={<ResetPassword />} />
 
           <Route
             path="/dashboard/*"
