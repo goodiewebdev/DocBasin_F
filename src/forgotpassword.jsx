@@ -27,7 +27,6 @@ const ForgotPassword = () => {
 
       if (res.ok) {
         showMessage("OTP sent successfully! Check your email.", "success");
-        // Store email for the next step
         localStorage.setItem("resetEmail", email);
         
         setTimeout(() => {

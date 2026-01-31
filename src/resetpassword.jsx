@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Lock, Hash } from "lucide-react";
 import { useMessage } from "./messagecontext";
-import "./forgotpassword.css"; // Reusing your existing styles
+import "./forgotpassword.css";
 
 const ResetPassword = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +16,6 @@ const ResetPassword = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Retrieve the email stored from the ForgotPassword step
     const storedEmail = localStorage.getItem("resetEmail");
     if (!storedEmail) {
       showMessage("Session expired. Please start again.", "error");
@@ -56,7 +55,7 @@ const ResetPassword = () => {
 
       if (res.ok) {
         showMessage("Password reset successful!", "success");
-        localStorage.removeItem("resetEmail"); // Clean up
+        localStorage.removeItem("resetEmail");
         setTimeout(() => {
           navigate("/login");
         }, 2000);
@@ -80,7 +79,6 @@ const ResetPassword = () => {
         </p>
 
         <form className="verification-form" onSubmit={handleResetPassword}>
-          {/* OTP Input */}
           <div className="input-group">
             <Hash size={20} style={{ marginLeft: "10px", color: "#666" }} />
             <input
@@ -95,7 +93,6 @@ const ResetPassword = () => {
             />
           </div>
 
-          {/* New Password Input */}
           <div className="input-group">
             <Lock size={20} style={{ marginLeft: "10px", color: "#666" }} />
             <input
@@ -109,7 +106,6 @@ const ResetPassword = () => {
             />
           </div>
 
-          {/* Confirm Password Input */}
           <div className="input-group">
             <Lock size={20} style={{ marginLeft: "10px", color: "#666" }} />
             <input
