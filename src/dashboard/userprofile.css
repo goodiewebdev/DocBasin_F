@@ -1,17 +1,186 @@
+.pageWrapper {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.userProfileMainContainer {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+  align-items: flex-start;
+}
+
 .userProfileSection {
+  flex: 3;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: fit-content;
-  border-radius: 12px;
-  padding: 20px;
   background-color: white;
-  border-radius: 10px;
-  min-height: 100vh;
+  padding: 40px;
+  border-radius: 12px;
+  min-height: 70vh;
+  border: 1px solid #e5e7eb;
 }
 
 .userProfileIcons {
-  margin-bottom: -5px;
-  margin-right: 5px;
+  margin-bottom: -1px;
+  margin-right: 8px;
   color: #305CDE;
+}
+
+.rightNavStack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  transform: translateY(-2px);
+  border-color: #305CDE;
+}
+
+.navBtn.active {
+  background: #305CDE;
+  color: white;
+}
+
+.navBtn.active .userProfileIcons {
+  color: white;
+}
+
+.tabContent h2 {
+  margin-bottom: 35px;
+  color: #111;
+  font-size: 1.1rem;
+}
+
+.detailsDisplay p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.inputGroup input {
+  padding: 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  outline-color: #305CDE;
+}
+
+.formActions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.saveBtn {
+  background-color: #305CDE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cancelBtn {
+  background-color: #edf2f7;
+  color: #4a5568;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editBtn {
+  background: #305CDE;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 20px;
+}
+
+.editBtn:hover {
+  background: #234cc5;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .userProfileMainContainer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .userProfileSection {
+    flex: none;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .rightNavStack {
+    flex: none;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+
+  .navBtn {
+    flex: 1;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 12px 10px;
+    font-size: 0.85rem;
+  }
+
+  .editForm {
+    max-width: 100%;
+  }
 }

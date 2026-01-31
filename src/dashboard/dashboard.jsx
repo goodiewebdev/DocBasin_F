@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import DashboardHome from "./dashboardhome.jsx";
 import UserProfile from "./userprofile.jsx";
-import AddContactList from "./addcontactlist.jsx";
 import UserContactLists from "./usercontactlists.jsx";
 import ContactListDetails from "./contactlistdetails.jsx";
 import ContactDetails from "./contactdetails.jsx";
@@ -103,7 +102,7 @@ const UserDashboard = () => {
             <span>Dashboard</span>
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             to="/dashboard/addcontactlist"
             className={({ isActive }) =>
               isActive ? "menu-item active" : "menu-item"
@@ -111,7 +110,7 @@ const UserDashboard = () => {
           >
             <PlusIcon size={18} className="dashboardSidebarIcon" />
             <span>Add Contact List</span>
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             to="/dashboard/mycontactlists"
@@ -154,10 +153,6 @@ const UserDashboard = () => {
         <Routes>
           <Route path="/" element={<DashboardHome user={user} />} />
           <Route path="userprofile" element={<UserProfile user={user} />} />
-          <Route
-            path="addcontactlist"
-            element={<AddContactList user={user} />}
-          />
           <Route
             path="mycontactlists"
             element={<UserContactLists user={user} />}
