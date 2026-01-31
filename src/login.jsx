@@ -86,6 +86,12 @@ const Login = () => {
             </span>
           </div>
 
+          <p className="textToLoginLink" style={{ textAlign: "right", marginTop: "-5px", marginBottom: "15px" }}>
+            <Link to="/forgotpassword" size={20} className="linkToLink" style={{ fontSize: "0.8rem" }}>
+              Forgot password?
+            </Link>
+          </p>
+
           <button type="submit" disabled={loading}>
             {loading ? "Logging in..." : "Login"}
           </button>
